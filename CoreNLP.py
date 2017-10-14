@@ -3,8 +3,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 nlp = StanfordCoreNLP('http://localhost:9000')
-
-sentences="76% Cabernet Sauvignon, 15% Merlot, 9% Cabernet Franc. Sexy wine. Red currant flavors. Power and elegance together. Tons of lush, decadent fruit. K&L's Ralph Sands adds: All of the above, with a powerful strike on the palate and great freshness!"
+sentence='put your text here.'
 
 output = nlp.annotate(sentences, properties={
   'annotators': 'tokenize,ssplit,pos,depparse,parse',
